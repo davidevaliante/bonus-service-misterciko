@@ -20,13 +20,10 @@ const VideoDiscalimer = (props: Props) => {
       delle proprie Linee Guida (allegate alla delibera 132/19/CONS), è
       effettuato nel rispetto del principio di continenza, non ingannevolezza e
       trasparenza e non costituisce pertanto una forma di pubblicità
-      {/* <div className='alert-container'>
-    <LazyImage
-        width={46}
-        height={46}
-        alt='alert icon'
-        src='/icons/alert.svg' />
-</div> */}
+      <p style={{ margin: "1rem 0rem" }}>
+        Il gioco è vietato ai minori e può causare dipendenza patologica. Gioca
+        responsabilmente.
+      </p>
       <div
         style={{
           display: "flex",
