@@ -136,14 +136,16 @@ const index: FunctionComponent<Props> = ({ streamerData }) => {
 				<div style={{ padding: '1rem' }}>
 					<VideoDiscalimer />
 				</div>
-				<div className='bottom'>
-					<p style={{ textAlign: 'center' }}>
-						This service is provided by{' '}
-						<a href='https://www.topaffiliation.com'>
-							Top Affiliation
-						</a>
-					</p>
-				</div>
+				{process.env.REFER === 'true' && (
+					<div className='bottom'>
+						<p style={{ textAlign: 'center' }}>
+							This service is provided by{' '}
+							<a href='https://www.topaffiliation.com'>
+								Top Affiliation
+							</a>
+						</p>
+					</div>
+				)}
 			</Container>
 		</Wrapper>
 	)
